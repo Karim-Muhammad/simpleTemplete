@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(41, 40, 40);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.parent {
+    background-color: black;
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+div.parent div {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+div.parent div.i2 {
+    animation-delay: 0.1s;
+}
+div.parent div.i3 {
+    animation-delay: 0.2s;
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0.5;
+        transform: translateY(-30px);
+    }
+}

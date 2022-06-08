@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #313123;
+}
+div.parent {
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.parent div {
+    background: blueviolet;
+    width: 100%;
+
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+    div.parent>div {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    div.parent>div {
+        width: calc(25% - 10px);
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {}
+
+/* Custom */
+
+@media (max-width: 1199px) {}
+
+/*
+    *info:
+        - Grid CSS is thing, and Grid System which you make by hands is another thing
+*/
+/*
+    *info:
+        - Frameworks help us to make code reusable, don't try to convert the CSS style to Classess Names!
+        - You have to make components as class no indiviual style like this:
+            [display-flex, justify-content, align-items] as a package
+*/
+/*
+    *initial-> display: initial(inline always)
+    *initial-> color: initial(varies from browser to another)
+    *unset-> may used as (inherit, or initial) according the element
+        -if there are properties(styles) inheritable, unset will the element remove his style(user agent style)
+        and apply the style of parent, if no inheritable so give it initial value
+    *revert -> back the style of element to (user agent style)
+
+    margin: initial-> = margin:0
+    back-> margin: revert -> = margin: 8px
+
+*/

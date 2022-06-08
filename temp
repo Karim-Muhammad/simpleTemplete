@@ -1,0 +1,14 @@
+<div class="col"> <!-- col -->
+    <div class="serv"> <!-- serv -->
+        <i class="fa-solid fa-envelope"></i>
+        <h3>graphic design</h3>
+        <p></p>
+    </div>
+</div>
+<div class="col"> <!-- col -->
+    <div class="serv"> <!-- serv -->
+        <i class="fa-solid fa-envelope"></i>
+        <h3>UI & UX</h3>
+        <p></p>
+    </div>
+</div>

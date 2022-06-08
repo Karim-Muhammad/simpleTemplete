@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="css/print.css" media="(min-width: 1000px) and (max-width: 1400px)">
+    <link rel="stylesheet" href="css/mobile.css" media="(min-width: 375px) and (max-width: 645px)">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 646px) and (max-width: 1228px)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 1288px) and (max-width: 1400px)">
+    <!-- 
+        or we can use them in main css file and it is ok if that's will be large lines
+    -->
+    <style media="print">
+        /* 
+            media for print page (ctrl + p)
+        */
+    </style>
+    <style media="(min-width: 1000px)">
+        /* 
+            media for the screen which its width from 0 to 1000px
+        */
+    </style>
+
+    <!--
+        the best practise, it is prefered to write your media for specific element under the main element
+        means, if you style h1 in main screen, type your media under it for all screens
+    -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+    </div>
+</body>
+</html>
